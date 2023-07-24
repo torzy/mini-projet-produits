@@ -1,0 +1,7 @@
+﻿backend/backend/__pycache__
+backend/produits/__pycache__
+backend/produits/migrations/__pycache__
+.idea
+frontend/node_modules
+Insomnia-All_2023-07-21.json
+help.txt
