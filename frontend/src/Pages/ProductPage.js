@@ -26,7 +26,7 @@ export class ProductPage extends Component {
         });
     };
 
-
+    // Function that hides the modal and clears its inputs when called
     closeModal = () => {
         this.clearModalInputs();
         this.setState({showModal: false});
@@ -41,7 +41,7 @@ export class ProductPage extends Component {
             });
     }
 
-    // Function to add a new product
+    //  A function that prepares the modal to add a new product (sets the modal title, clears inputs, and shows the modal).
     addClick() {
         this.clearModalInputs();
         this.setState({
@@ -50,7 +50,7 @@ export class ProductPage extends Component {
             showModal: true
         });
     }
-
+    // A function that prepares the modal to edit an existing product (sets the modal title, populates inputs with product details, and shows the modal).
     editClick(prod) {
         this.setState({
             showModal: true,
@@ -61,7 +61,7 @@ export class ProductPage extends Component {
             ProdQuantite: prod.Quantite
         });
     }
-
+    //A function that sends a POST request to the API to create a new product based on the data entered in the modal.
     createClick() {
         fetch(variables.API_URL + 'produits/', {
             method: 'POST', headers: {
@@ -82,7 +82,7 @@ export class ProductPage extends Component {
                 alert('Failed');
             });
     }
-
+    // A function that sends a PUT request to the API to update an existing product based on the data entered in the modal.
     updateClick() {
         fetch(variables.API_URL + 'produits/' + this.state.id + '/', {
             method: 'PUT', headers: {
@@ -103,7 +103,7 @@ export class ProductPage extends Component {
                 alert('Failed');
             });
     }
-
+    // A function that sends a DELETE request to the API to delete a product based on its ID
     deleteClick(id) {
 
         if (window.confirm('Etes vous sûr?')) {
