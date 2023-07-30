@@ -3,9 +3,13 @@ Développement back-end:
 Pour développer le backend, nous devrons installer l'IDE Pycharm et le Framework Web Django, si vous ne souhaitez pas utiliser Pycharm, vous pouvez utiliser n'importe quel IDE de votre choix.
 
 1) Ouvrez le terminal et installez les bibliothèques requises dans l'environnement virtuel:
-pip install Django 
+
+pip install Django
+
 pip install djangorestframework
+
 pip install django-cors-headers
+
 2) a) Créez un nouveau projet Django:
 django-admin startproject backend
 b) La structure du projet devrait ressembler à ceci :
