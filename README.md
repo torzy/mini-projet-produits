@@ -1,4 +1,5 @@
-Développement back-end
+Développement back-end:
+
 Pour développer le backend, nous devrons installer l'IDE  Pycharm et le Framework Web Django. Si vous ne souhaitez pas utiliser Pycharm, vous pouvez utiliser n'importe quel IDE de votre choix.
 
 1) Ouvrez le terminal et installez les bibliothèques requises dans l'environnement virtuel:
